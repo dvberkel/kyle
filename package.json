@@ -1,0 +1,16 @@
+{
+  "name": "kyle",
+  "version": "0.0.0",
+  "description": "Experiment in TDD, creating a Cabri like port",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "mathematics",
+    "tdd"
+  ],
+  "author": "Mark van Cuijk, Daan van Berkel",
+  "license": "MIT"
+}
