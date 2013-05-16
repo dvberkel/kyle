@@ -22,4 +22,12 @@ describe('Line', function(){
 
 	expect(line.on(p)).toBeFalsy();
     });
+
+    describe('toString', function(){
+	it("of kyle.Line.through(kyle.Point.at(0, 0)).and(kyle.Point.at(1, 1)) should render as 'kyle.Line.through(kyle.Point.at(0, 0)).and(kyle.Point.at(1, 1))'", function() {
+	    var line = kyle.Line.through(kyle.Point.at(0,0)).and(kyle.Point.at(1,1));
+
+	    expect("" + line).toBe('kyle.Line.through(kyle.Point.at(0, 0)).and(kyle.Point.at(1, 1))');
+	});
+    });
 });
