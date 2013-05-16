@@ -10,6 +10,15 @@
     Point.prototype.equals = function(p){
 	return this.x() === p.x() && this.y() === p.y();
     }
+    Point.prototype.toString = function(){
+	return "kyle.Point.at(" + this.x() + ", " + this.y() + ")";
+    }
 
-    kyle.Point = Point;
+    var factory = {
+	at : function(x, y) {
+	    return new Point(x, y);
+	}
+    }
+
+    kyle.Point = factory;
 })(kyle);
