@@ -4,7 +4,9 @@
 	this.p2 = function(){ return p2; };
     };
     Line.prototype.on = function(p){
-	return (this.p1().equals(p));
+	return (this.p2().y() - this.p1().y()) * (p.x() - this.p1().x())
+	     + (this.p1().x() - this.p2().x()) * (p.y() - this.p1().y())
+	     === 0;
     };
     Line.prototype.toString = function(){
 	return 'kyle.Line.through(' + this.p1() + ').and(' + this.p2() + ')';
